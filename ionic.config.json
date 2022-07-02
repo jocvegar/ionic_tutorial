@@ -1,0 +1,7 @@
+{
+  "name": "vue_ionic_tutorial",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
