@@ -4,8 +4,13 @@
     pageDefaultFallback="/memories"
   >
     <h2 v-if="!memory">Could not find memory :(</h2>
-    <h2 v-else>I work!!</h2>
-    memory: {{ memory }}
+
+    <memory-detail
+      v-else
+      :title="memory.title"
+      :image="memory.image"
+      :description="memory.description"
+    />
   </base-layout>
 </template>
 
@@ -13,7 +18,7 @@
 import { useStore } from "../store";
 import { ref, computed } from "vue";
 import { useRoute } from "vue-router";
-
+import MemoryDetail from "../components/memories/MemoryDetail.vue";
 const route = useRoute();
 const store = useStore();
 const memoryId = ref(route.params.id);
