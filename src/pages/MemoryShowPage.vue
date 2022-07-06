@@ -1,7 +1,7 @@
 <template>
   <base-layout
     :page-title="memory ? memory.title : 'Loading...'"
-    pageDefaultFallback="/memories"
+    page-default-fallback="/memories"
   >
     <h2 v-if="!memory">Could not find memory :(</h2>
 
