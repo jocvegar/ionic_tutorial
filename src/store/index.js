@@ -17,7 +17,7 @@ export const useStore = defineStore("main", {
           title: "Memory 2",
           description: "This is the second memory",
           image:
-            "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1770&q=80",
         },
         {
           id: 3,
