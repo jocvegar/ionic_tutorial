@@ -11,7 +11,7 @@
       </ion-item> -->
       <ion-item>
         <ion-thumbnail slot="start">
-          <img src="" alt="" />
+          <img :src="previewImage" alt="" />
         </ion-thumbnail>
         <ion-button type="button" fill="clear" @click="takePhoto">
           <ion-icon slot="start" :icon="camera" />
@@ -52,9 +52,10 @@ const memory = ref({
   description: "",
 });
 
-const previewImage = ref(null);
+const previewImage = ref("");
 
 const submitForm = () => {
+  memory.value.url = previewImage.value;
   emit("save-memory", memory.value);
 };
 
