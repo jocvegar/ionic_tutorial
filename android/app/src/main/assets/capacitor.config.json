@@ -1,0 +1,6 @@
+{
+	"appId": "com.josevega.vuememories",
+	"appName": "Vue Memories",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
